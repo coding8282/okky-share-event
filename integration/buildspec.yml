@@ -7,7 +7,7 @@ phases:
 
 artifacts:
   files:
-    - target/okky-share-1.0.1.jar
+    - target/okky-share-event-1.0.0-SNAPSHOT.jar
   discard-paths: yes
 
 cache:
