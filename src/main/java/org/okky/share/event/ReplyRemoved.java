@@ -8,10 +8,10 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor(access = PRIVATE)
 @Getter
 public class ReplyRemoved extends DomainEvent {
-    String replyId;
+    String id;
 
-    public ReplyRemoved(String replyId) {
+    public ReplyRemoved(String id) {
         super("okky-reply");
-        this.replyId = replyId;
+        this.id = id;
     }
 }

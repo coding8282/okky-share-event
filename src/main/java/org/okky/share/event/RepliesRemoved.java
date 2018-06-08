@@ -10,10 +10,10 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor(access = PRIVATE)
 @Getter
 public class RepliesRemoved extends DomainEvent {
-    List<String> replyIds;
+    List<String> ids;
 
-    public RepliesRemoved(List<String> replyIds) {
+    public RepliesRemoved(List<String> ids) {
         super("okky-reply");
-        this.replyIds = replyIds;
+        this.ids = ids;
     }
 }
