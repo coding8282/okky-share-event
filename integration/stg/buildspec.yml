@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - mvn clean deploy -Pprod
+
+artifacts:
+  files:
+    - target/okky-share-event-1.0.0-SNAPSHOT.jar
+  discard-paths: yes
+
+cache:
+  paths:
+    - '/root/.m2/**/*'
