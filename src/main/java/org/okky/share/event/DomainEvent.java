@@ -1,9 +1,9 @@
 package org.okky.share.event;
 
-import com.google.gson.GsonBuilder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.okky.share.JsonUtil;
 
 import static java.lang.System.currentTimeMillis;
 import static lombok.AccessLevel.PROTECTED;
@@ -22,8 +22,7 @@ public abstract class DomainEvent {
         this.context = context;
     }
 
-    @Override
-    public String toString() {
-        return new GsonBuilder().setPrettyPrinting().create().toJson(this);
+    public String toJson() {
+        return JsonUtil.toJson(this);
     }
 }
