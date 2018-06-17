@@ -14,9 +14,9 @@ public class ArticleRemoved extends DomainEvent {
     public ArticleRemoved(String articleId) {
         super("okky-article");
         this.articleId = articleId;
-
     }
 
+    // ---------------------------------------------------
     public static void main(String[] args) {
         System.out.println(JsonUtil.toPrettyJson(sample()));
     }

@@ -31,6 +31,7 @@ public class ReplyWrote extends DomainEvent {
         this.acceptedOn = acceptedOn;
     }
 
+    // ---------------------------------------------------
     public static void main(String[] args) {
         System.out.println(JsonUtil.toPrettyJson(sample()));
     }

@@ -19,6 +19,7 @@ public class RepliesRemoved extends DomainEvent {
         this.ids = ids;
     }
 
+    // ---------------------------------------------------
     public static void main(String[] args) {
         System.out.println(JsonUtil.toPrettyJson(sample()));
     }
