@@ -12,15 +12,15 @@ import static org.okky.share.JsonUtil.toPrettyJson;
 public class Emoted extends DomainEvent {
     String id;
     String targetId;
-    String memberId;
+    String emoterId;
     long emotedOn;
     String type;
 
-    public Emoted(String id, String targetId, String memberId, long emotedOn, String type) {
+    public Emoted(String id, String targetId, String emoterId, long emotedOn, String type) {
         super("okky-like");
         this.id = id;
         this.targetId = targetId;
-        this.memberId = memberId;
+        this.emoterId = emoterId;
         this.emotedOn = emotedOn;
         this.type = type;
     }
