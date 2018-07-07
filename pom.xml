@@ -8,6 +8,10 @@
     <artifactId>okky-share-event</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <properties>
+        <sonar.projectKey>okky-share-event</sonar.projectKey>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.okky.share</groupId>
